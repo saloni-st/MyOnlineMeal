@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MyOnlineMeal | Get In Touch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1120px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div>
+            <a href="index.html">MyOnlineMeal</a>
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="services.html">Services</a></li>
+            <li class="item"><a href="about.html">About</a></li>
+            <li class="item"><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <div class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <p>Delivering happiness one meal at a time! 🍽️</p>
+        </div>
+    </div>
+
+    <!-- Contact Hero Section -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <div class="page-hero-text">
+                <span class="hero-badge">📞 Get In Touch</span>
+                <h1 class="page-hero-title">Contact Us</h1>
+                <p class="page-hero-description">
+                    Have questions, suggestions, or need support? We're here to help! Reach out to us and we'll get back to you as soon as possible.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="contact-methods-section">
+        <div class="container">
+            <div class="contact-methods-header">
+                <span class="section-badge">💬 Multiple Ways to Reach Us</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Choose the most convenient way to contact us</p>
+            </div>
+            
+            <div class="contact-methods-grid">
+                <div class="contact-method-card">
+                    <div class="method-icon">📞</div>
+                    <h3>Phone Support</h3>
+                    <p>Speak directly with our customer support team</p>
+                    <div class="method-details">
+                        <a href="tel:+919999999999" class="contact-link">+91-9999999999</a>
+                        <span class="availability">Available 24/7</span>
+                    </div>
+                    <a href="tel:+919999999999" class="method-btn">Call Now</a>
+                </div>
+                
+                <div class="contact-method-card">
+                    <div class="method-icon">✉️</div>
+                    <h3>Email Support</h3>
+                    <p>Send us an email and we'll respond within 2 hours</p>
+                    <div class="method-details">
+                        <a href="mailto:support@myonlinemeal.com" class="contact-link">support@myonlinemeal.com</a>
+                        <span class="availability">Response within 2 hours</span>
+                    </div>
+                    <a href="mailto:support@myonlinemeal.com" class="method-btn">Send Email</a>
+                </div>
+                
+                <div class="contact-method-card">
+                    <div class="method-icon">💬</div>
+                    <h3>Live Chat</h3>
+                    <p>Chat with our support team in real-time</p>
+                    <div class="method-details">
+                        <span class="contact-link">Available on our app & website</span>
+                        <span class="availability">9 AM - 11 PM</span>
+                    </div>
+                    <button class="method-btn" onclick="openChat()">Start Chat</button>
+                </div>
+                
+                <div class="contact-method-card">
+                    <div class="method-icon">📍</div>
+                    <h3>Visit Our Office</h3>
+                    <p>Come visit us at our headquarters</p>
+                    <div class="method-details">
+                        <span class="contact-link">123 Food Street, Delhi 110001</span>
+                        <span class="availability">Mon-Sat: 10 AM - 6 PM</span>
+                    </div>
+                    <a href="https://maps.google.com" class="method-btn" target="_blank">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="contact-header">
+            <span class="contact-badge">📝 Send us a Message</span>
+            <h1 class="contact-title">Contact Form</h1>
+            <p class="contact-subtitle">Fill out the form below and we'll get back to you as soon as possible</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-card-header">
+                        <div class="contact-icon">🏢</div>
+                        <h3 class="contact-card-title">Headquarters</h3>
+                    </div>
+                    <div class="contact-card-content">
+                        <p>123 Food Street<br>Delhi, India 110001</p>
+                        <p><strong>Business Hours:</strong><br>Mon-Sat: 10:00 AM - 6:00 PM<br>Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-card-header">
+                        <div class="contact-icon">📞</div>
+                        <h3 class="contact-card-title">Customer Support</h3>
+                    </div>
+                    <div class="contact-card-content">
+                        <p><strong>Main Line:</strong><br><a href="tel:+919999999999">+91-9999999999</a></p>
+                        <p><strong>WhatsApp:</strong><br><a href="https://wa.me/919999999999">+91-9999999999</a></p>
+                        <p><strong>Available:</strong> 24/7</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-card-header">
+                        <div class="contact-icon">✉️</div>
+                        <h3 class="contact-card-title">Email Support</h3>
+                    </div>
+                    <div class="contact-card-content">
+                        <p><strong>General Inquiries:</strong><br><a href="mailto:hello@myonlinemeal.com">hello@myonlinemeal.com</a></p>
+                        <p><strong>Customer Support:</strong><br><a href="mailto:support@myonlinemeal.com">support@myonlinemeal.com</a></p>
+                        <p><strong>Business Partnerships:</strong><br><a href="mailto:partners@myonlinemeal.com">partners@myonlinemeal.com</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-card-header">
+                        <div class="contact-icon">🌐</div>
+                        <h3 class="contact-card-title">Follow Us</h3>
+                    </div>
+                    <div class="contact-card-content">
+                        <div class="social-links-contact">
+                            <a href="#" class="social-link-contact">📘 Facebook</a>
+                            <a href="#" class="social-link-contact">📷 Instagram</a>
+                            <a href="#" class="social-link-contact">🐦 Twitter</a>
+                            <a href="#" class="social-link-contact">💼 LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <h2 class="contact-form-title">Send us a Message</h2>
+                <form id="enhanced-contact-form" class="contact-form">
+                    <div class="form-row">
+                        <div class="enhanced-form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="enhanced-form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="enhanced-form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="enhanced-form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    
+                    <div class="enhanced-form-group">
+                        <label for="inquiryType">Inquiry Type *</label>
+                        <select name="inquiryType" id="inquiryType" required>
+                            <option value="">Select inquiry type</option>
+                            <option value="order">Order Related Issue</option>
+                            <option value="delivery">Delivery Issue</option>
+                            <option value="payment">Payment Problem</option>
+                            <option value="catering">Catering Service</option>
+                            <option value="partnership">Restaurant Partnership</option>
+                            <option value="feedback">Feedback & Suggestions</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="enhanced-form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" name="subject" id="subject" placeholder="Brief subject of your message" required>
+                    </div>
+                    
+                    <div class="enhanced-form-group">
+                        <label for="message">Message *</label>
+                        <textarea name="message" id="message" rows="6" placeholder="Please provide detailed information about your inquiry. The more details you provide, the better we can assist you." required></textarea>
+                    </div>
+                    
+                    <div class="enhanced-form-group">
+                        <label for="orderNumber">Order Number (if applicable)</label>
+                        <input type="text" name="orderNumber" id="orderNumber" placeholder="Enter your order number if this is order-related">
+                    </div>
+                    
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter for updates and special offers</label>
+                    </div>
+                    
+                    <button type="submit" class="form-submit">
+                        <span>Send Message</span>
+                        <span style="margin-left: 10px;">📤</span>
+                    </button>
+                    
+                    <p class="form-note">
+                        * Required fields. We typically respond within 2 hours during business hours.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-header">
+                <span class="section-badge">❓ Quick Answers</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find quick answers to common questions</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I track my order?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can track your order in real-time through our app or website. Just go to 'My Orders' and click on your current order to see live tracking.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your refund policy?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer full refunds for orders that are significantly delayed, incorrect, or if there are quality issues. Refunds are processed within 5-7 business days.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I become a restaurant partner?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Visit our restaurant partner page or contact us at partners@myonlinemeal.com. Our team will guide you through the onboarding process.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are your delivery charges?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Standard delivery charge is ₹29 per order. However, delivery is free for orders above ₹299. Premium members enjoy free delivery on all orders.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I cancel my order?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can cancel your order within 2 minutes of placing it through the app or website. After that, please contact our support team for assistance.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer corporate catering?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We provide comprehensive corporate catering solutions including daily meals, meeting catering, and event services. Contact us for a custom quote.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-header">
+                <span class="section-badge">📍 Find Us</span>
+                <h2 class="section-title">Visit Our Office</h2>
+            </div>
+            
+            <div class="map-container">
+                <div class="map-info">
+                    <h3>MyOnlineMeal Headquarters</h3>
+                    <div class="office-details">
+                        <div class="office-detail">
+                            <span class="detail-icon">📍</span>
+                            <div>
+                                <strong>Address:</strong><br>
+                                123 Food Street, Connaught Place<br>
+                                New Delhi, Delhi 110001, India
+                            </div>
+                        </div>
+                        
+                        <div class="office-detail">
+                            <span class="detail-icon">🕒</span>
+                            <div>
+                                <strong>Office Hours:</strong><br>
+                                Monday - Saturday: 10:00 AM - 6:00 PM<br>
+                                Sunday: Closed
+                            </div>
+                        </div>
+                        
+                        <div class="office-detail">
+                            <span class="detail-icon">🚗</span>
+                            <div>
+                                <strong>Parking:</strong><br>
+                                Free parking available<br>
+                                Metro: Rajiv Chowk (2 min walk)
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-actions">
+                        <a href="https://maps.google.com" class="btn btn-primary" target="_blank">Get Directions</a>
+                        <a href="tel:+919999999999" class="btn btn-outline">Call Before Visit</a>
+                    </div>
+                </div>
+                
+                <div class="map-placeholder">
+                    <div class="map-frame">
+                        <div class="map-content">
+                            <div class="map-pin">📍</div>
+                            <h4>MyOnlineMeal Office</h4>
+                            <p>123 Food Street, Delhi</p>
+                            <a href="https://maps.google.com" target="_blank" class="map-link">View on Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="img/logo1.png" alt="MyOnlineMeal Logo">
+                        <span class="footer-logo-text">MyOnlineMeal</span>
+                    </div>
+                    <p class="footer-description">
+                        Delivering happiness one meal at a time. Experience the finest food from the best restaurants, delivered fresh to your doorstep with love and care.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📺</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i>🏠</i> Home</a></li>
+                        <li><a href="services.html"><i>🍽️</i> Services</a></li>
+                        <li><a href="about.html"><i>ℹ️</i> About Us</a></li>
+                        <li><a href="contact.html"><i>📞</i> Contact</a></li>
+                        <li><a href="#"><i>💼</i> Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i>🚚</i> Food Delivery</a></li>
+                        <li><a href="#"><i>🎉</i> Event Catering</a></li>
+                        <li><a href="#"><i>📦</i> Bulk Orders</a></li>
+                        <li><a href="#"><i>🏢</i> Corporate Catering</a></li>
+                        <li><a href="#"><i>🎂</i> Party Orders</a></li>
+                        <li><a href="#"><i>🤝</i> Restaurant Partnership</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">📍</div>
+                            <div class="footer-contact-text">
+                                123 Food Street<br>
+                                Delhi, India 110001
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">📞</div>
+                            <div class="footer-contact-text">
+                                +91-9999999999<br>
+                                Mon-Sun: 9AM-11PM
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">✉️</div>
+                            <div class="footer-contact-text">
+                                hello@myonlinemeal.com<br>
+                                support@myonlinemeal.com
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 style="margin-top: 30px;">Newsletter</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 15px;">Get updates on new restaurants and offers!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 MyOnlineMeal. All rights reserved. Made with ❤️ for food lovers.</p>
+                </div>
+                <ul class="footer-bottom-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        function openChat() {
+            alert('Live chat feature would open here in a real implementation!');
+        }
+        
+        // FAQ Toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const toggle = item.querySelector('.faq-toggle');
+                
+                question.addEventListener('click', () => {
+                    const isOpen = answer.style.display === 'block';
+                    
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        otherItem.querySelector('.faq-answer').style.display = 'none';
+                        otherItem.querySelector('.faq-toggle').textContent = '+';
+                        otherItem.classList.remove('active');
+                    });
+                    
+                    // Toggle current item
+                    if (!isOpen) {
+                        answer.style.display = 'block';
+                        toggle.textContent = '-';
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
